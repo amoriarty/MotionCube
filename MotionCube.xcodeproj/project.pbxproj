@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		EC411CFC1FCEC83500160EB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC411CFB1FCEC83500160EB1 /* AppDelegate.swift */; };
 		EC411CFE1FCEC83500160EB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC411CFD1FCEC83500160EB1 /* ViewController.swift */; };
-		EC411D011FCEC83500160EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC411CFF1FCEC83500160EB1 /* Main.storyboard */; };
 		EC411D031FCEC83500160EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC411D021FCEC83500160EB1 /* Assets.xcassets */; };
 		EC411D061FCEC83500160EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC411D041FCEC83500160EB1 /* LaunchScreen.storyboard */; };
+		EC411D0E1FCEC99100160EB1 /* PolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC411D0D1FCEC99100160EB1 /* PolygonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC411CF81FCEC83500160EB1 /* MotionCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC411CFB1FCEC83500160EB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC411CFD1FCEC83500160EB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC411D001FCEC83500160EB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC411D021FCEC83500160EB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC411D051FCEC83500160EB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC411D071FCEC83500160EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC411D0D1FCEC99100160EB1 /* PolygonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				EC411CFB1FCEC83500160EB1 /* AppDelegate.swift */,
 				EC411CFD1FCEC83500160EB1 /* ViewController.swift */,
-				EC411CFF1FCEC83500160EB1 /* Main.storyboard */,
+				EC411D0D1FCEC99100160EB1 /* PolygonView.swift */,
 				EC411D021FCEC83500160EB1 /* Assets.xcassets */,
 				EC411D041FCEC83500160EB1 /* LaunchScreen.storyboard */,
 				EC411D071FCEC83500160EB1 /* Info.plist */,
@@ -125,7 +125,6 @@
 			files = (
 				EC411D061FCEC83500160EB1 /* LaunchScreen.storyboard in Resources */,
 				EC411D031FCEC83500160EB1 /* Assets.xcassets in Resources */,
-				EC411D011FCEC83500160EB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC411CFE1FCEC83500160EB1 /* ViewController.swift in Sources */,
+				EC411D0E1FCEC99100160EB1 /* PolygonView.swift in Sources */,
 				EC411CFC1FCEC83500160EB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +144,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC411CFF1FCEC83500160EB1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC411D001FCEC83500160EB1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC411D041FCEC83500160EB1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
