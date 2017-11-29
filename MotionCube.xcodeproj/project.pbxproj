@@ -22,6 +22,7 @@
 		EC411D051FCEC83500160EB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC411D071FCEC83500160EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC411D0D1FCEC99100160EB1 /* PolygonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonView.swift; sourceTree = "<group>"; };
+		EC411D101FCED31800160EB1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 			children = (
 				EC411CFA1FCEC83500160EB1 /* MotionCube */,
 				EC411CF91FCEC83500160EB1 /* Products */,
+				EC411D0F1FCED31700160EB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +64,14 @@
 				EC411D071FCEC83500160EB1 /* Info.plist */,
 			);
 			path = MotionCube;
+			sourceTree = "<group>";
+		};
+		EC411D0F1FCED31700160EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC411D101FCED31800160EB1 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
