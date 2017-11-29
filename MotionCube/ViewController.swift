@@ -54,13 +54,38 @@ class ViewController: UIViewController {
     }
     
     @objc func addPolygon(sender: UITapGestureRecognizer) {
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
+        let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(handlePinchGesture))
         let origin = sender.location(in: mainView)
         let frame = CGRect(x: origin.x - POLYGON_SIZE / 2, y: origin.y - POLYGON_SIZE / 2, width: POLYGON_SIZE, height: POLYGON_SIZE)
         let polygon = PolygonView(frame: frame)
         
+        polygon.addGestureRecognizer(panGesture)
+        polygon.addGestureRecognizer(pinchGesture)
         gravityBehavior.addItem(polygon)
         collisionBehavior.addItem(polygon)
         mainView.addSubview(polygon)
+    }
+    
+    @objc func handlePanGesture(sender: UIPanGestureRecognizer) {
+        guard let polygon = sender.view else { return }
+        let translation = sender.translation(in: mainView)
+        
+        switch sender.state {
+        case .began: gravityBehavior.removeItem(polygon)
+        case .changed: polygon.transform = CGAffineTransform(translationX: translation.x, y: translation.y)
+        case .ended: gravityBehavior.addItem(polygon)
+        default: break
+        }
+    }
+    
+    @objc func handlePinchGesture(sender: UIPinchGestureRecognizer) {
+        guard let polygon = sender.view else { return }
+        
+        switch sender.state {
+        case .changed: polygon.transform = CGAffineTransform(scaleX: sender.scale, y: sender.scale)
+        default: break
+        }
     }
 }
 
